@@ -64,7 +64,7 @@ function guessNumber() {
   } else if (numberConversion === 4) {
     alert(`You're correct ${userName}, Number of guesses: ${guessCount}`);
     alert(`Your previous guesses: ${userGuesses}`)
-// Need to figure out how why userGuesses breaks
+// Need to figure out how why userGuesses breaks. I forgot about curly braces.
   } else if (numberConversion >= 5) {
     alert("You've got to guess lower!");
     guessCount++;
@@ -77,7 +77,7 @@ function guessNumber() {
     guessNumber();
   }
 }
-//need to add a break statement somewhere``
+//need to add a break statement somewhere`
 function playAgain() {
   let userLetter = prompt('Would you like to play again? Y or N');
 
