@@ -111,7 +111,7 @@ function playGame() {
   // Ask for player's name and store it in a variable
   const name = prompt("What is your name?");
 
-  // Generate a random number between 1 and 100 and store it in a variable
+  // Generate a random number between 1 and 10 and store it in a variable
   const secretNumber = Math.floor(Math.random() * 10) + 1;
 
   // Initialize variables to keep track of number of guesses and guesses made
