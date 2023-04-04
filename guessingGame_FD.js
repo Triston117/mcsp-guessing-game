@@ -101,7 +101,10 @@
 
 // FINAL DRAFT 
 // Initialize empty object to store players' scores
-const players = {};
+const players = {
+  'winston': [3,5,67],
+  'tyler':[1,3,17]
+};
 
 // Function to play the game
 function playGame() {
@@ -109,7 +112,7 @@ function playGame() {
   const name = prompt("What is your name?");
 
   // Generate a random number between 1 and 100 and store it in a variable
-  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  const secretNumber = Math.floor(Math.random() * 10) + 1;
 
   // Initialize variables to keep track of number of guesses and guesses made
   let numGuesses = 0;
@@ -118,7 +121,7 @@ function playGame() {
   // Start loop to keep asking for guesses until the correct number is guessed
   while (true) {
     // Ask for player's guess and store it in a variable
-    const guess = prompt("Guess a number between 1 and 100:");
+    const guess = prompt("Guess a number between 1 and 10:");
 
     // Convert the guess to a number
     const guessNum = Number(guess);
